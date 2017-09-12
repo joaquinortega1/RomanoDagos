@@ -4,7 +4,7 @@ namespace Ejemplo;
 
 use PHPUnit\Framework\TestCase;
 
-class TestCase{
+class convertidor{
 
 	public function convertir($x){
 		$i = $x;
