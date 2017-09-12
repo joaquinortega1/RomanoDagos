@@ -5,7 +5,7 @@ namespace Ejemplo;
 
 use PHPUnit\Framework\TestCase;
 
-$numeros = [
+global $numeros = [
 1  => 'I',
 2  => 'II',
 3  => 'III',
