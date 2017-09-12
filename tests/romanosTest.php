@@ -5,7 +5,10 @@ namespace Ejemplo;
 
 use PHPUnit\Framework\TestCase;
 
-global $numeros = [
+
+class romanosTest extends TestCase {
+	
+  public $numeros = [
 1  => 'I',
 2  => 'II',
 3  => 'III',
@@ -4007,14 +4010,11 @@ global $numeros = [
 3999  => 'MMMCMXCIX'
 ];
 
-class romanosTest extends TestCase {
-
-
   public function testNumero() {
     $convertidor = new convertidor;
     
     for ( $i=1 ; $i<=3999 ; $i++ ){
-    $this->assertEquals($convertidor->convertir($i), $numeros[$i]);
+    $this->assertEquals($convertidor->convertir($i), $this->numeros[$i]);
 	
 	}
   }
