@@ -1,6 +1,10 @@
 <?php
 
-class convertidor{
+namespace Ejemplo;
+
+use PHPUnit\Framework\TestCase;
+
+class TestCase{
 
 	public function convertir($x){
 		$i = $x;
